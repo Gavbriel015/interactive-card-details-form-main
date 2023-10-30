@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  
+</head>
+<body class="font-spaceGrotesk md:h-screen">
+  <main class="md:flex-row flex flex-col gap-24  md:h-full">
+    <div class="relative">
+      <img class="md:hidden block w-full md:h-full" src="./images/bg-main-mobile.png" alt="">
+      <img class="md:block hidden w-full md:h-full" src="./images/bg-main-mobile.png" alt="">
+      <img class="sm:w-96 w-72 absolute top-8 sm:right-10 right-5" src="./images/bg-card-back.png" alt="">
+      <p id="cvc" class="sm:top-[123px] sm:pr-2 sm:right-18 sm:text-sm text-xs text-white absolute top-[102px] right-14">000</p>
+      <div class="sm:w-96 w-72 absolute -bottom-10 left-5">
+        <img src="./images/bg-card-front.png" alt="">
+        <img class="w-16 absolute top-4 left-4" src="./images/card-logo.svg" alt="">
+        <div class="relative">
+          <h1 id="numberCard" class="absolute tracking-[2px]  bottom-11 left-4 text-[18px] text-white ">0000 0000 0000 0000</h1>
+          <div class="absolute text-[10px] tracking-wide flex bottom-4 left-4 w-full justify-between pr-10">
+            <h1 id="cardName" class="text-white uppercase">Jane Applessed</h1>
+            <p class="text-white">00/00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:flex md:h-screen md:">
+      <form action="" class="flex flex-col gap-4 px-6 md:mt-64">
+        <div class="flex flex-col gap-2">
+          <h1 class="uppercase text-[#220930] text-[15px]">Cardholder name</h1>
+          <input id="nameId" class="p-3 rounded-md border border-gray-200 w-full" type="text" placeholder="e.g Jane Appleseed">
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1 class="uppercase text-[#220930] text-[15px]">Card Number</h1>
+          <input id="numberId" class="p-3 rounded-md border border-gray-200 w-full" type="text" placeholder="e.g 1234 5678 9123 0000">
+        </div>
+        <div class="flex gap-3">
+          <div class="basis-1/4 flex flex-initial flex-col gap-2 ">
+            <h1  class="uppercase text-[#220930] text-[15px]">Exp. Date</h1>
+            <input id="dateExpId" class="p-3 rounded-md border border-gray-200 w-full" type="text" placeholder="MM">
+          </div>
+          <div class="flex basis-1/4 flex-col gap-2">
+            <h1  class="uppercase text-[#220930] text-[15px]">(MM/YY)</h1>
+            <input id="monthYear" class="p-3 rounded-md border border-gray-200 w-full" type="text" placeholder="YY">
+          </div>
+          <div class="flex basis-1/2 flex-col gap-2">
+            <h1 id="cvc" class="uppercase text-[#220930] text-[15px]">CVC</h1>
+            <input class="p-3 rounded-md border border-gray-200 w-full" type="text" placeholder="e.g 123">
+          </div>
+        </div>
+        <button class="bg-[#220930] text-white p-3 rounded-md">Confirm</button>
+      </form>
+    </div>
+    <div>
+
+    </div>
+  </main>
+  
+
+  <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm -->
+
+  <!-- Completed state start -->
+<!-- 
+  Thank you!
+  We've added your card details
+  Continue -->
+  
+  
+</body>
+<script src="./app.js" ></script>
+</html>
